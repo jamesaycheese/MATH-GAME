@@ -2,8 +2,8 @@
 
 #Game 1 
 The game provides 1- 9 digits. all digits can be used only once 
-You random pick a number from the 1-9 digits list and the 1st number that you pick has to able divide by 1 
-The second number you pick has to be a number that you never picked before. 
+You random pick a number from the 1-9 digits list and the 1st number that you pick has to be able to divide by 1 
+The second number you pick has to be a number that you have not picked previously. 
 For example you picked 2 as your first number then your second number cannot be 2 again. 
 The only option you have is 1,3,4,5,6,7,8,9. 
 Let's say you pick 4.
