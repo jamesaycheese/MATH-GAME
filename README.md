@@ -22,3 +22,19 @@ etc
 so far so good 
 
 The final goal is to use all 9 digits 
+
+
+# Sudoku
+
+`Soduku` is a backtracking solver. It finds the first empty cell, tries the digits 1 to 9, keeps a digit that does not repeat in its row, column or 3 by 3 box, and steps back when no digit fits.
+
+`sudoku_generator.py` builds on it:
+
+- `generate(level)` makes a random puzzle with exactly one solution, at easy, medium or hard
+- `count_solutions(bo)` counts solutions, stopping at two, to test that a puzzle is fair
+- `solve_smart(bo)` fills the most constrained cell first, for puzzles where plain backtracking is slow
+- `check_answers(puzzle, answer, attempt)` marks a player's wrong entries
+
+Run `python sudoku_generator.py hard` to print a puzzle and its answer.
+
+Play it in the browser: https://jamesquantai.com/projects/sudoku-solver.html
